@@ -1,14 +1,19 @@
 <template>
   <b-container class="azuracast" fluid>
-    <b-row>
-      <b-col cols="8">
+    <b-row class="mx-auto pagerow">
+      <b-col class="content px-5" cols="9">
         <Banner />
         <Videocard videosrc="/images/videoplaceholder.png" />
-        <b-row>
-          
+        <b-row class="mt-2">
+          <b-col cols="6">
+            <Mediaplayer />
+          </b-col>
+          <b-col class="d-flex flex-column" cols="6">
+            <Songhistory />
+            <Mixer />
+          </b-col>
         </b-row>
       </b-col>
-      <b-col cols="1" class="divider"></b-col>
       <b-col cols="3">
         <Sidebar />
       </b-col>
@@ -27,10 +32,17 @@ export default {};
   height: 100%;
   padding: 32px;
 }
-.divider {
-  width: 2px;
+.pagerow {
+  position: relative;
+}
+.content:after {
+  width: 4px;
+  position: absolute;
   height: 100%;
   background: #2d2d2d;
-  margin: 0px auto;
+  content: "";
+  top: 0px;
+  right: 10px;
+  border-radius: 15px;
 }
 </style>

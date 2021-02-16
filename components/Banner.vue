@@ -1,5 +1,5 @@
 <template>
-  <b-container class="banner">
+  <b-container class="banner px-0">
     <b-row cols="2" class="justify-content-between align-items-center">
       <b-col lg="6" class="d-flex align-items-center">
         <b-row class="align-items-center">

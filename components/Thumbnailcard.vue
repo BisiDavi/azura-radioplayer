@@ -8,7 +8,7 @@
       :width="width"
     ></b-img>
     <div class="play-icon" v-if="play === true">
-      <img src="/images/play.png" alt="play icon" />
+      <img src="/images/play-min.png" alt="play icon" />
     </div>
   </div>
 </template>

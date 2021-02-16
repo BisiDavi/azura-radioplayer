@@ -1,6 +1,6 @@
 <template>
   <div class="videocard my-2">
-    <img :src="videosrc" width="900px" height="350px" />
+    <img :src="videosrc" width="100%" height="350px" />
     <div class="btnGrp">
       <Button text="Live" />
       <Iconbutton text="8/10" iconImg="/images/profile.png" />
