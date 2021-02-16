@@ -1,5 +1,5 @@
 <template>
-  <b-container class="sidebar">
+  <b-container class="videocard">
     <b-row class="d-flex flex-column">
       <h3>Other Playlist</h3>
     </b-row>

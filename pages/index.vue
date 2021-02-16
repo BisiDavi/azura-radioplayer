@@ -1,5 +1,5 @@
 <template>
-  <b-container class="azuracast">
+  <b-container class="azuracast" fluid>
     <b-row>
       <b-col cols="8">
         <Banner />

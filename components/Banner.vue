@@ -1,6 +1,6 @@
 <template>
   <b-container class="banner">
-    <b-row cols="2" class="justify-content-between">
+    <b-row cols="2" class="justify-content-between align-items-center">
       <b-col lg="4" class="d-flex align-items-center">
         <Thumbnailcard
           thumbnailImg="imageplaceholder1.png"
@@ -38,8 +38,8 @@ p {
 }
 img.heartIcon {
   padding: 15px;
-  width: 52px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #ff8a00;
   box-sizing: border-box;
   border-radius: 8px;
