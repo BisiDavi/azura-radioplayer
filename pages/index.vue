@@ -4,7 +4,7 @@
       <b-col class="content px-5" cols="9">
         <Banner />
         <Videocard videosrc="/images/videoplaceholder.png" />
-        <b-row class="mt-2">
+        <b-row class="mt-4">
           <b-col cols="6">
             <Mediaplayer />
           </b-col>

@@ -38,6 +38,12 @@ export default {
 
 <style scoped>
 .thumbnailcard {
-  margin: "10px";
+  margin: 5px;
+  position:relative; 
+}
+.play-icon {
+  position: absolute;
+  top: 35%;
+  left: 30%;
 }
 </style>

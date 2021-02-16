@@ -25,8 +25,8 @@ export default {
   position: relative;
 }
 img {
-  height: 250px;
-  width: 250px;
+  height: 190px;
+  width: 220px;
   margin: 10px;
 }
 .text {

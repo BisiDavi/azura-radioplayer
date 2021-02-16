@@ -1,6 +1,6 @@
 <template>
-  <b-card class="mediaplayer px-1">
-    <b-card-header class="d-flex header mt-0 py-2 px-2">
+  <b-card class="mediaplayer px-1 mt-0">
+    <b-card-header class="header mt-0 py-2 mx-0 px-0">
       <Thumbnailcard
         imgsrc="/images/imageplaceholder1.png"
         height="100px"
@@ -13,12 +13,30 @@
       </div>
     </b-card-header>
     <b-card-body class="px-0">
-      <img src="/images/wave.png" alt="wave" height="100px" width="100%" />
+      <img
+        src="/images/wave.png"
+        class="wave"
+        alt="wave"
+        height="100px"
+        width="100%"
+      />
     </b-card-body>
     <b-card-footer class="footer px-0">
-      <Slider />
-      <div :key="control.id" v-for="control in contols">
-        <img :src="control.image" :class="playPause(control)" />
+      <span class="slider">
+        <Slider />
+        <div class="timer">
+          <p>07:00</p>
+          <p>20:32</p>
+        </div>
+      </span>
+      <div class="media-controls">
+        <div
+          :class="playPause(control)"
+          :key="control.id"
+          v-for="control in controls"
+        >
+          <img :src="control.image" />
+        </div>
       </div>
     </b-card-footer>
   </b-card>
@@ -54,6 +72,13 @@ export default {
   font-family: Poppins;
   font-style: normal;
   margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.media-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h3 {
   font-size: 30px;
@@ -76,6 +101,12 @@ p {
   padding: 20px 15px 10px 15px;
   border-radius: 50%;
   margin: 0px 10p;
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+.pauseIcon img {
+  margin: auto;
 }
 .text {
   font-family: Poppins;
@@ -86,7 +117,17 @@ p {
 .footer {
   border: none;
 }
-
+.slider,
+.wave {
+  margin-top: -10px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 10px;
+}
 .mediaplayer {
   background-color: #232323;
   border-radius: 18px;

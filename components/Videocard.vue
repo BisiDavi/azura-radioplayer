@@ -5,6 +5,7 @@
       <Button text="Live" />
       <Iconbutton text="8/10" iconImg="/images/profile.png" />
     </div>
+    <img src="/images/play.png" alt="play icon" class="playIcon" />
   </div>
 </template>
 
@@ -23,6 +24,11 @@ export default {
 <style scoped>
 .videocard {
   position: relative;
+}
+.playIcon {
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
 h3 {
   color: white;

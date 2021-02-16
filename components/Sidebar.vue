@@ -2,8 +2,14 @@
   <b-container class="sidebar">
     <b-row class="d-flex flex-column">
       <h3 class="mb-3">Other Playlist</h3>
-      <div v-for="playlist in playlists" class="imagecards" :key="playlist.id">
-        <Imagecard :imgsrc="playlist.image" />
+      <div class="sidebar-content">
+        <div
+          v-for="playlist in playlists"
+          class="imagecards"
+          :key="playlist.id"
+        >
+          <Imagecard :imgsrc="playlist.image" />
+        </div>
       </div>
     </b-row>
   </b-container>
@@ -30,7 +36,7 @@ export default {
 </script>
 
 <style scoped>
-.sidebar {
+.sidebar-content {
   padding: 8px;
   overflow-y: auto;
   height: 100vh;
@@ -38,6 +44,20 @@ export default {
   flex-direction: column;
   background-color: black;
   margin: 10px;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 126px;
+  border-radius: 21px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ff8a00;
+  border-radius: 21px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #292929;
+  border-radius: 21px;
+  width: 6px;
 }
 p {
   margin-bottom: 4px;
@@ -49,7 +69,7 @@ img {
 h3 {
   color: white;
   font-family: Poppins;
-  margin-left: 10px;
+  margin-left: 20px;
   text-align: left;
 }
 </style>
