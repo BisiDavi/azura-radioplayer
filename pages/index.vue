@@ -45,4 +45,18 @@ export default {};
   right: 10px;
   border-radius: 15px;
 }
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 126px;
+  border-radius: 21px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ff8a00;
+  border-radius: 21px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #292929;
+  border-radius: 21px;
+  width: 6px;
+}
 </style>
