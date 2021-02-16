@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <b-card img-src="require(`~assets/images/${thumbnailImg}.png`)" alt="thumbnailAlt"> </b-card>
+  <div class="thumbnail">
+    <div
+      img-src="require(`~assets/images/${thumbnailImg}.png`)"
+      alt="thumbnail"
+      img-height="height"
+      img-width="width"
+    ></div>
   </div>
 </template>
 
@@ -12,10 +17,20 @@ export default {
       type: String,
       required: true
     },
-    thumbnailAlt: {
+    height: {
+      type: String,
+      required: true
+    },
+    width: {
       type: String,
       required: true
     }
   }
 };
 </script>
+
+<style scoped>
+.thumbnail {
+  margin: "10px";
+}
+</style>
