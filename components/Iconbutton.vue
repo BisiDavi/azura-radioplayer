@@ -1,11 +1,10 @@
 <template>
-  <button class="Button">
-    <img :src="iconimg" alt="icon" height="15px" width="15px" />
+  <button class="Iconbutton">
+    <img :src="iconImg" alt="icon" height="15px" width="15px" />
     {{ text }}
   </button>
 </template>
 
-<
 <script>
 export default {
   name: "Iconbutton",
@@ -14,23 +13,16 @@ export default {
       type: String,
       required: true
     },
-    iconimg: {
+    iconImg: {
       type: String,
       required: true
     }
-  },
-  data(props) {
-    const { text, iconimg } = props;
-    return {
-      text,
-      iconimg
-    };
   }
 };
 </script>
 
 <style>
-button {
+button.Iconbutton {
   display: flex;
   justify-content: space-around;
   padding: 4px 7px;
@@ -41,6 +33,9 @@ button {
   color: white;
   border: none;
   height: 24px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 img {
   margin: 2px 5px;

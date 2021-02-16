@@ -1,8 +1,12 @@
 <template>
   <b-container class="azuracast" fluid>
-    <b-row class="align-items-center">
+    <b-row>
       <b-col cols="8">
         <Banner />
+        <Videocard videosrc="/images/videoplaceholder.png" />
+        <b-row>
+          
+        </b-row>
       </b-col>
       <b-col cols="1" class="divider"></b-col>
       <b-col cols="3">

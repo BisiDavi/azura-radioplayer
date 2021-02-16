@@ -8,7 +8,7 @@
               imgsrc="/images/imageplaceholder1.png"
               height="100px"
               width="100px"
-              play="false"
+              :play="false"
             />
           </b-col>
           <b-col lg="8">
@@ -45,8 +45,6 @@ p {
 }
 img.heartIcon {
   padding: 15px;
-  width: 100%;
-  height: 100%;
   border: 1px solid #ff8a00;
   box-sizing: border-box;
   border-radius: 8px;

@@ -1,6 +1,6 @@
 <template>
   <div class="imagecard">
-    <img :src="video" alt="image" />
+    <img :src="imgsrc" alt="image" />
     <div class="text">
       <p>Travel and adventure</p>
       <h4>Radio station</h4>
@@ -11,27 +11,26 @@
 <script>
 export default {
   name: "Imagecard",
-  data() {
-    return {
-      video
-    };
-  },
   props: {
-    video: {
+    imgsrc: {
       type: String,
-      required
+      required: true
     }
   }
 };
 </script>
 
 <style scoped>
+.imagecard {
+  position: relative;
+}
 img {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
 }
 .text {
-  left: 15px;
+  left: 25px;
   bottom: 20px;
   position: absolute;
   color: white;
@@ -41,7 +40,8 @@ img {
 p {
   font-weight: 500;
   font-size: 9px;
-  line-height: 13p;
+  line-height: 13px;
+  margin: 0px;
 }
 h4 {
   font-weight: bold;
