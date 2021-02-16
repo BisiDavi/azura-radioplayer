@@ -1,5 +1,5 @@
 <template>
-  <b-card class="mediaplayer px-1 mt-0">
+  <b-card class="mediaplayer px-1 pt-0 mt-0">
     <b-card-header class="header mt-0 py-2 mx-0 px-0">
       <Thumbnailcard
         imgsrc="/images/imageplaceholder1.png"
@@ -12,7 +12,7 @@
         <h3>Radio station</h3>
       </div>
     </b-card-header>
-    <b-card-body class="px-0">
+    <b-card-body class="px-0 pt-0">
       <img
         src="/images/wave.png"
         class="wave"
@@ -23,7 +23,7 @@
     </b-card-body>
     <b-card-footer class="footer px-0">
       <span class="slider">
-        <Slider />
+        <Slider :showControls="false" />
         <div class="timer">
           <p>07:00</p>
           <p>20:32</p>
@@ -135,6 +135,9 @@ p {
   font-family: Poppins;
   padding: 21px;
   height: 385px;
+}
+.footer {
+  margin-top: -20px;
 }
 h3 {
   font-size: 30px;

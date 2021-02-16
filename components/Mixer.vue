@@ -1,7 +1,9 @@
 <template>
   <div class="mixer d-flex flex-column mt-4 p-3">
     <p class="my-3">Volume mixer</p>
-    <Slider />
+    <span class="volume-controls">
+      <Slider :showControls="true" />
+    </span>
     <div class="volume-mixer d-flex my-3 mx-0">
       <span class="sound mr-4">
         <p class="mt-0 mb-4 mr-4">Quality sounds</p>
@@ -61,6 +63,10 @@ p {
   justify-content: flex-start;
 }
 
+.volume-controls input {
+  width: 85% !important;
+}
+
 button.download {
   display: flex;
   justify-content: center;
@@ -72,6 +78,9 @@ button.download {
   color: white;
   border: none;
   height: 28px;
+}
+input {
+  width: 85% !important;
 }
 
 img {
