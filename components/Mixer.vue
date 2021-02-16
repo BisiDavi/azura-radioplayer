@@ -42,7 +42,7 @@ export default {
 }
 p {
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins';, sans-serif
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

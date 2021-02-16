@@ -15,6 +15,9 @@ export default {
     showControls: {
       type: Boolean,
       required: true
+    },
+    width: {
+      type: String
     }
   }
 };
@@ -25,5 +28,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.volume-slider input {
+  width: 85%;
 }
 </style>
