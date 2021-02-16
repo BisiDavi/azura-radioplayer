@@ -1,16 +1,14 @@
 <template>
-  <b-card>
+  <b-card class="mediaplayer">
     <b-card-header class="d-flex header">
       <Thumbnailcard />
       <p>Travel and adventure</p>
       <h3>Radio station</h3>
     </b-card-header>
     <b-card-body>
-      <img src="~assets/images/wave.png" alt="wave" />
+      <img src="/images/wave.png" alt="wave" />
     </b-card-body>
-    <b-card-footer>
-      
-    </b-card-footer>
+    <b-card-footer> </b-card-footer>
   </b-card>
 </template>
 
@@ -41,5 +39,12 @@ p {
 img {
   height: 200px;
   width: 500px;
+}
+.mediaplayer {
+  border-radius: 10px;
+  position: relative;
+  background-color: transparent;
+  margin: 10px;
+  padding: 0p;
 }
 </style>

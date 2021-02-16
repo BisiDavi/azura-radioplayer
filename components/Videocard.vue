@@ -1,14 +1,28 @@
 <template>
-  <b-container class="videocard">
-    <b-row class="d-flex flex-column">
-      <h3>Other Playlist</h3>
-    </b-row>
-  </b-container>
+  <div class="videocard">
+    <img :src="video" width="900px" height="350px" />
+    <div class="btnGrp">
+      <Button text="Live" />
+      <Iconbutton text="8/10" />
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Videocard"
+  name: "Videocard",
+  props: {
+    videosrc: {
+      type: String,
+      required: true
+    }
+  },
+  data(props) {
+    const { videosrc } = props;
+    return {
+      videosrc
+    };
+  }
 };
 </script>
 

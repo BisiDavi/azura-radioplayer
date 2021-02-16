@@ -1,6 +1,6 @@
 <template>
   <b-container class="azuracast" fluid>
-    <b-row>
+    <b-row class="align-items-center">
       <b-col cols="8">
         <Banner />
       </b-col>
@@ -21,6 +21,7 @@ export default {};
   background-color: black;
   width: 100%;
   height: 100%;
+  padding: 32px;
 }
 .divider {
   width: 2px;

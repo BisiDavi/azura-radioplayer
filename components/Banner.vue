@@ -1,16 +1,23 @@
 <template>
   <b-container class="banner">
     <b-row cols="2" class="justify-content-between align-items-center">
-      <b-col lg="4" class="d-flex align-items-center">
-        <Thumbnailcard
-          thumbnailImg="/images/imageplaceholder1.png"
-          cardHeight="120px"
-          cardWidth="150px"
-        />
-        <span class="d-flex flex-column">
-          <h5>Radio station playlist</h5>
-          <p>Travel and adventure</p>
-        </span>
+      <b-col lg="6" class="d-flex align-items-center">
+        <b-row class="align-items-center">
+          <b-col lg="4">
+            <Thumbnailcard
+              imgsrc="/images/imageplaceholder1.png"
+              height="100px"
+              width="100px"
+              play="false"
+            />
+          </b-col>
+          <b-col lg="8">
+            <span class="d-flex flex-column">
+              <h5>Radio station playlist</h5>
+              <p>Travel and adventure</p>
+            </span>
+          </b-col>
+        </b-row>
       </b-col>
       <b-col lg="1">
         <img src="/images/heart.png" class="heartIcon" alt="heart" />

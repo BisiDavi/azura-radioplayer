@@ -1,6 +1,9 @@
 <template>
   <div class="thumbnailcard">
     <b-img alt="thumbnail" class="thumbnail" v-bind="cardProps"></b-img>
+    <div class="play-icon" v-if="play">
+      <img src="/images/play.png" alt="play" />
+    </div>
   </div>
 </template>
 
@@ -8,24 +11,29 @@
 export default {
   name: "Thumbnailcard",
   data(props) {
+    const { width, height, imgsrc, play } = props;
     return {
       cardProps: {
-        width: props.cardWidth,
-        height: props.cardHeight,
-        src: props.thumbnailImg
-      }
+        width: width,
+        height: height,
+        src: imgsrc
+      },
+      play
     };
   },
   props: {
-    thumbnailImg: {
+    imgsrc: {
       type: String,
       required: true
     },
-    cardHeight: {
+    play: {
+      type: Boolean
+    },
+    height: {
       type: String,
       required: true
     },
-    cardWidth: {
+    width: {
       type: String,
       required: true
     }
