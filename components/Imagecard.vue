@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "Imagecard",
   props: {
     video: {
       type: String,

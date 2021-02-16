@@ -6,6 +6,12 @@
   </b-container>
 </template>
 
+<script>
+export default {
+  name: "Videocard"
+};
+</script>
+
 <style scoped>
 h3 {
   color: white;

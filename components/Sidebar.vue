@@ -6,6 +6,12 @@
   </b-container>
 </template>
 
+<script>
+export default {
+  name: "Sidebar"
+};
+</script>
+
 <style scoped>
 h3 {
   color: white;

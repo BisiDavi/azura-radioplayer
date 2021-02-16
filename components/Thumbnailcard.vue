@@ -1,27 +1,31 @@
 <template>
-  <div class="thumbnail">
-    <div
-      img-src="require(`~assets/images/${thumbnailImg}.png`)"
-      alt="thumbnail"
-      img-height="height"
-      img-width="width"
-    ></div>
+  <div class="thumbnailcard">
+    <b-img alt="thumbnail" class="thumbnail" v-bind="cardProps"></b-img>
   </div>
 </template>
 
 <script>
 export default {
   name: "Thumbnailcard",
+  data(props) {
+    return {
+      cardProps: {
+        width: props.cardWidth,
+        height: props.cardHeight,
+        src: props.thumbnailImg
+      }
+    };
+  },
   props: {
     thumbnailImg: {
       type: String,
       required: true
     },
-    height: {
+    cardHeight: {
       type: String,
       required: true
     },
-    width: {
+    cardWidth: {
       type: String,
       required: true
     }
@@ -30,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.thumbnail {
+.thumbnailcard {
   margin: "10px";
 }
 </style>
