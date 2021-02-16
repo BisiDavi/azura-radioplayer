@@ -29,7 +29,7 @@
 <style scoped>
 h5,
 p {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: "normal";
 }
 h5 {

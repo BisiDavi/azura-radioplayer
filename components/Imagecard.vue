@@ -34,7 +34,7 @@ img {
   bottom: 20px;
   position: absolute;
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
 p {

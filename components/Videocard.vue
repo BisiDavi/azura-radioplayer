@@ -32,7 +32,7 @@ export default {
 }
 h3 {
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   margin-left: 10px;
   text-align: left;
 }

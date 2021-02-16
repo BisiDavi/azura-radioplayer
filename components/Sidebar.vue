@@ -68,7 +68,7 @@ img {
 
 h3 {
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   margin-left: 20px;
   text-align: left;
 }

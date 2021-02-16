@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .header {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin-left: 10px;
   display: flex;
@@ -109,7 +109,7 @@ p {
   margin: auto;
 }
 .text {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin-left: 10px;
 }
@@ -132,7 +132,7 @@ p {
   background-color: #232323;
   border-radius: 18px;
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   padding: 21px;
   height: 385px;
 }
